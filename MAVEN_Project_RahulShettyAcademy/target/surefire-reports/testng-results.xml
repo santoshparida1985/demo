@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="49" started-at="2021-09-13T01:13:50 IST" finished-at="2021-09-13T01:13:50 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="49" started-at="2021-09-13T01:13:50 IST" finished-at="2021-09-13T01:13:50 IST">
+      <class name="mavenProject.SeleniumTest">
+        <test-method status="PASS" signature="SeleniumBrowserAutomation()[pri:0, instance:mavenProject.SeleniumTest@72b6cbcc]" name="SeleniumBrowserAutomation" duration-ms="4" started-at="2021-09-13T01:13:50 IST" finished-at="2021-09-13T01:13:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleniumBrowserAutomation -->
+        <test-method status="PASS" signature="SeleniumUIAutomation()[pri:0, instance:mavenProject.SeleniumTest@72b6cbcc]" name="SeleniumUIAutomation" duration-ms="0" started-at="2021-09-13T01:13:50 IST" finished-at="2021-09-13T01:13:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleniumUIAutomation -->
+      </class> <!-- mavenProject.SeleniumTest -->
+      <class name="mavenProject.RestAssuredTest">
+        <test-method status="PASS" signature="APIBrowserAutomation()[pri:0, instance:mavenProject.RestAssuredTest@5d76b067]" name="APIBrowserAutomation" duration-ms="0" started-at="2021-09-13T01:13:50 IST" finished-at="2021-09-13T01:13:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIBrowserAutomation -->
+        <test-method status="PASS" signature="APIUIAutomation()[pri:0, instance:mavenProject.RestAssuredTest@5d76b067]" name="APIUIAutomation" duration-ms="1" started-at="2021-09-13T01:13:50 IST" finished-at="2021-09-13T01:13:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIUIAutomation -->
+      </class> <!-- mavenProject.RestAssuredTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

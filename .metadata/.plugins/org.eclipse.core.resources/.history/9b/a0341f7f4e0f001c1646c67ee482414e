@@ -1,0 +1,29 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+public class Parent {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream("C:\\Users\\santo\\eclipse-workspace\\JavaPractice\\src\\Data.properties");
+		
+		prop.load(fis);
+		prop.getProperty("NAME");
+		System.out.println(prop.getProperty("NAME"));
+		
+		Methods m = new Methods();
+		
+		m.Sum();
+		
+		
+		
+		
+		System.out.println(m.display());
+		
+	}
+
+}

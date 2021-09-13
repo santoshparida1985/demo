@@ -1,0 +1,13 @@
+Feature: Application Login
+
+ Scenario: Home Page Default Login
+    Given User is on Netbanking Landing page
+    When User login into application with "Santosh" and password "1234"
+    Then Home page is populated
+    And cards are displayed "true"
+    
+     Scenario: Home Page Default Login
+    Given User is on Netbanking Landing page
+    When User login into application with "Lopa" and password "6785"
+    Then Home page is populated
+    And cards are  displayed "false"

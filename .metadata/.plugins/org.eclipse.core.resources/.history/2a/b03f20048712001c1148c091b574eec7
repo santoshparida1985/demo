@@ -1,0 +1,29 @@
+Feature: Application Login
+
+Background: The banking home page is open
+   Given Bank Home page is open
+   When Click on Netbanking button
+   Then Netbanking page is displayed
+   
+   
+   Scenario Outline: Home Page Default Login
+    Given User is on Netbanking Landing page
+    When User login into application with <username> and password <password>
+    But credentials are wrong
+    Then Home page is populated
+    And cards are  displayed "false"
+
+    
+#  Scenario Outline: Home Page Default Login
+#    Given User is on Netbanking Landing page
+#    When User login into application with <username> and password <password>
+#    But credentials are wrong
+#    Then Home page is populated
+#    And cards are  displayed "false"
+#    
+#    
+#  Examples:
+#   |username|password|
+#   |xyz|123|
+#   |abc|12345|
+#   |tfg|987|  

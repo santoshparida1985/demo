@@ -1,0 +1,63 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class DemoChrome {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		// First command is to invoke the chrome driver.exe file that invoked chrome driver server. Below is the syntax for same.
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\WORK\\BrowserDrivers\\chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\WORK\\BrowserDrivers\\geckodriver.exe");
+		
+		
+		/*Next step is to instantiate ChromeDriver class for Chrome browser 
+		 * and make its return type as WebDriver as we will use its methods for automation.*/
+		
+		WebDriver driver = new FirefoxDriver();
+		driver.get("Http://facebook.com");
+		driver.close();
+		
+		Thread.sleep(5000);
+		
+		driver = new ChromeDriver();
+		
+		
+		/* Hits google */
+		driver.get("Http://google.com"); // Hit url on thge browser
+		System.out.println(driver.getTitle()); // validate the page  title is correct                 
+		System.out.println(driver.getCurrentUrl()); // validate you landed on the correct url
+		
+		
+		//System.out.println(driver.getPageSource()); // To print the page source of the url we hit
+		
+		
+		
+		/* Hits Yahoo*/
+		/*How to navigate to another page and return back*/
+		
+		driver.get("Http://yahoo.com"); // Hit url on thge browser
+		System.out.println(driver.getTitle()); // validate the page  title is correct
+		System.out.println(driver.getCurrentUrl()); // validate you landed on the correct url
+		
+		
+		/* Hits Google again*/
+		driver.navigate().back(); // return back to previous page
+		System.out.println(driver.getTitle()); // validate the page  title is correct
+		System.out.println(driver.getCurrentUrl()); // validate you landed on the correct url
+		
+		
+		/* Hits Yahoo again*/
+		driver.navigate().forward(); // navigate back to the page from where we came back
+		System.out.println(driver.getTitle()); // validate the page  title is correct
+		System.out.println(driver.getCurrentUrl()); // validate you landed on the correct url
+		
+		driver.close(); // It closes the current browser opened by selenium
+		driver.quit(); // It closes all the browsers opened by selenium
+		
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package testRun;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features = "C:\\Users\\santo\\eclipse-workspace\\CucumberDemo\\src\\test\\java\\features\\Login.feature",
+		glue = {"/CucumberDemo/src/test/java/steps/StepDefinitions.java"}
+		)
+public class TestRun {
+	
+	
+
+}

@@ -1,0 +1,16 @@
+package testRun;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@io.cucumber.junit.CucumberOptions(
+		features = "src/test/java/features/Login.feature",
+		glue = "steps"
+		)
+public class TestRun {
+	
+	
+
+}
