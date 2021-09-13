@@ -1,0 +1,93 @@
+package steps;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.But;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import cucumber.api.junit.Cucumber;
+
+public class StepDefinitions {
+	
+	@RunWith(Cucumber.class)
+	public class MyStepDefinitions {
+		
+		
+		@Before //Hook example - runs before every scenario
+	    public void beforeScenario(){
+	        System.out.println("This will run before the Scenario");
+	    }	
+		
+		@After // Hook example- runs after every scenario
+	    public void afterScenario(){
+	        System.out.println("This will run after the Scenario");
+	    }
+		
+		
+		 @Given("^Bank Home page is open$")
+		    public void bank_home_page_is_open() {
+		        System.out.println("In Backgroung code");
+		    }
+
+		    @When("^Click on Netbanking button$")
+		    public void click_on_netbanking_button()  {
+		    	System.out.println("In Backgroung code");
+		       
+		    }
+
+		    @Then("^Netbanking page is displayed$")
+		    public void netbanking_page_is_displayed()  {
+		    	System.out.println("In Backgroung code");
+		        
+		    }
+
+
+	    @Given("^User is on Netbanking Landing page$")
+	    public void user_is_on_netbanking_landing_page()  {
+	    	
+	    	 System.out.println("inside given tag");
+	        
+	    }
+
+	    @When("^User login into application with (.+) and password (.+)$")
+	    public void user_login_into_application_with_and_password(String username, String password) throws Throwable {
+	    	
+	    	System.out.println("Checking Examples keyword");
+	       
+	    }
+	   
+
+	    @Then("^Home page is populated$")
+	    public void home_page_is_populated() {
+
+	    	  System.out.println("inside then tag");
+	    	
+	        
+	      
+	    }
+
+	    @And("^cards are displayed \"([^\"]*)\"$")
+	    public void cards_are_displayed_something(String strArg1)  {
+	        
+	    	System.out.println(strArg1);
+	    	
+	        
+	        
+	    }
+	    
+	    @But("^credentials are wrong$")
+	    public void credentials_are_wrong()  {
+	    	
+	    	System.out.println("credentials are wrong");
+	        
+	    }
+	    
+	  
+
+	}
+
+}

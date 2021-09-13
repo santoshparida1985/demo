@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+
+public class Methods {
+	
+	
+	public void Sum()
+	{
+		
+		int a = 2;
+		int b = 3;
+		
+		int sum = a+b ;
+		
+		System.out.println("Sum is " +sum);
+		
+		
+	}
+	
+	public String display()
+	
+	{
+		return "Check return keyword";
+	}
+	
+	public void Arraydemo(ArrayList <String> al)
+	{
+		
+		Iterator<String> itr = al.iterator();
+		
+		while(itr.hasNext())
+		{
+			 itr.next();
+			 System.out.println(itr.next());
+		}
+		
+		
+	}
+
+}
